@@ -22,6 +22,8 @@ class Song
     song 
   end 
   
-    
-    
+  def self.create_by_name
+    @@all << self.new_by_name.save 
+  end
+  
 end
